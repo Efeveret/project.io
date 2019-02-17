@@ -5,29 +5,23 @@
     <title>Register</title>
 </head>
 <body>
-    <h3>Enter Registration Information<h3>
+        <h3>Enter Registration Information</h3>
         <p>----------------</p>
         <p>*Given Name:</p>
-        <input type="text" name="HRS_APPL_WRK_FIRST_NAME" id="HRS_APPL_WRK_FIRST_NAME" tabindex="0" value="" class="PSEDITBOX _u1st_changeText" style="width:236px; " maxlength="30" onchange="u1st_inlineFunctions.change._0.call(this, event)" aria-required="true">
-        <p>Middle Name:</p>
-        <input type="text" name="HRS_APPL_WRK_FIRST_NAME" id="HRS_APPL_WRK_MIDDLE_NAME" tabindex="0" value="" class="PSEDITBOX _u1st_changeText" style="width:236px; " maxlength="30" onchange="u1st_inlineFunctions.change._0.call(this, event)" aria-required="true">
-        <p>*Family Name:</p>
-        <input type="text" name="HRS_APPL_WRK_FIRST_NAME" id="HRS_APPL_WRK_FAMILY_NAME" tabindex="0" value="" class="PSEDITBOX _u1st_changeText" style="width:236px; " maxlength="30" onchange="u1st_inlineFunctions.change._0.call(this, event)" aria-required="true">
-        <p>*User ID:</p>
-        <input type="text" name="HRS_APPL_WRK_FIRST_NAME" id="HRS_APPL_WRK_USERNAME" tabindex="0" value="" class="PSEDITBOX _u1st_changeText" style="width:236px; " maxlength="30" onchange="u1st_inlineFunctions.change._0.call(this, event)" aria-required="true">
-        <p>*Password:</p>
-        <input type="text" name="HRS_APPL_WRK_FIRST_NAME" id="HRS_APPL_WRK_PASS" tabindex="0" value="" class="PSEDITBOX _u1st_changeText" style="width:236px; " maxlength="30" onchange="u1st_inlineFunctions.change._0.call(this, event)" aria-required="true">
-        <p>*Confirma Password:</p>
-        <input type="text" name="HRS_APPL_WRK_FIRST_NAME" id="HRS_APPL_WRK_PASS2" tabindex="0" value="" class="PSEDITBOX _u1st_changeText" style="width:236px; " maxlength="30" onchange="u1st_inlineFunctions.change._0.call(this, event)" aria-required="true">
-        <p>*Primary Email:</p>
-        <input type="text" name="HRS_APPL_WRK_FIRST_NAME" id="HRS_APPL_WRK_EMAIL" tabindex="0" value="" class="PSEDITBOX _u1st_changeText" style="width:236px; " maxlength="30" onchange="u1st_inlineFunctions.change._0.call(this, event)" aria-required="true">
-        <p>Alternate Email:</p>
-        <input type="text" name="HRS_APPL_WRK_FIRST_NAME" id="HRS_APPL_WRK_EMAIL01" tabindex="0" value="" class="PSEDITBOX _u1st_changeText" style="width:236px; " maxlength="30" onchange="u1st_inlineFunctions.change._0.call(this, event)" aria-required="true">
-        <p>*Date of Birth</p>
-        <input type="text" name="HRS_APPL_WRK_BIRTHDATE" id="HRS_APPL_WRK_BIRTHDATE" tabindex="0" value="05/02/2019" class="PSEDITBOX _u1st_changeText" style="width:71px; " maxlength="10" onchange="u1st_inlineFunctions.change._7.call(this, event)" onkeyup="u1st_inlineFunctions.keyup._1.call(this, event)" aria-required="true">
-        <br>
-        <br>
-        <input type="button" name="HRS_APPL_WRK_HRS_REGISTER_PB$20$" id="HRS_APPL_WRK_HRS_REGISTER_PB$20$" tabindex="0" value="Register" class="PSPUSHBUTTON" style="width:72px; " onclick="u1st_inlineFunctions.click._5.call(this, event)">
+            <form class="signup-form" action="includes/signup.inc.php" method="POST">
+                <input type="text" name="first" style="width:236px;">
+                <p>*Family Name:</p>
+                <input type="text" name="last" style="width:236px; ">
+                <p>*User ID:</p>
+                <input type="text" name="uid" style="width:236px; ">
+                <p>*Password:</p>
+                <input type="password" name="pwd" style="width:236px; ">
+                <p>*Email:</p>
+                <input type="text" name="email" style="width:236px;">
+                <br>
+                <br>
+                    <button type="submit" name="submit">Register</button>
+            </form>
         <br>
         <br>
         <a href="https://efeveret.github.io/project.io/">Return to Previous Page</a>
