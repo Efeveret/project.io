@@ -4,22 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Project Homepage!</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/CSS/unsemantic-grid-responsive-tablet.css">
+
+   <style>
+
+   body{
+            background-image: url("assets/images/index_background.jpg");
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
+<body>
+
     <form class="signin-form" action="includes/signin.inc.php" method="POST">
-            <a href="#" >Forgot User ID</a>
-            <br>
-            <input type="text" name="userid" placeholder="User ID">
-            <br>
-            <br>
-            <a href="#" >Forgot Password</a>
-            <br>
-            <input type="password" name="pwd" placeholder="Password"  >
-            <br>
-            <br>
-            <button type="submit" name="submit">Login</button>
-            <br>
-            New user?
-            <a href="http://csdm-webdev.rgu.ac.uk/1811216/project.io/register.html" class="">Create account here</a>
+            <div id="form_inside">
+                <a href="#">Forgot User ID</a>
+                <br>
+                <input type="text" name="userid" placeholder="User ID">
+                <br>
+                <br>
+                <a href="#" >Forgot Password</a>
+                <br>
+                <input type="password" name="pwd" placeholder="Password"  >
+                <br>
+                <br>
+                <button type="submit" class="signin_bu" name="submit">Login</button>
+                <br>
+                New user?
+                <a href="http://csdm-webdev.rgu.ac.uk/1811216/project.io/register.html" class="">Create account here</a>
+            </div>
     </form>
+
 </body>
 </html>
